@@ -45,7 +45,7 @@ public class PassageAnalyzer {
 		List<String> sortedList = createSortedStringList(vowelCount);
 		
 		// If the passage does not contain any vowels return N/A, otherwise return the vowel
-		return (sortedList.get(0).split(",")[0] == "0") ? "N/A" : sortedList.get(0).split(",")[1];
+		return (sortedList.get(0).split(",")[0].equals("0")) ? "N/A" : sortedList.get(0).split(",")[1];
 	}
 	
 	public String getLastWordWithVowel(String vowel) {
