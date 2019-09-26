@@ -11,6 +11,8 @@ import java.util.Scanner;
  * Read in locally stored text file and output a list of vowels and the amount of times 
  * they appear in the file to the console, then output the last word in the file that 
  * contains the most used vowel.
+ * 
+ * Author: Maxwell Watson
  *
  */
 
@@ -18,7 +20,7 @@ public class App {
 	
     public static void main( String[] args ) {
     	
-    	// create the file for passage
+    	// Create the file for passage
     	String fileName = "passage.txt";
 		File searchFile = new File(fileName);
 		
