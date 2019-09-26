@@ -36,6 +36,17 @@ public class PassageAnalyzer {
 		return sortedVowelCount;
 	}
 	
+	public String getMostUsedVowel() {
+		
+		// Create the vowel count map
+		Map<Character, Integer> vowelCount = createVowelCountMap();
+
+		// Turn the vowel count map into a list of strings that can be sorted
+		List<String> sortedList = createSortedStringList(vowelCount);
+		
+		return sortedList.get(0).split(",")[1];
+	}
+	
 	public String getLastWordWithVowel(String vowel) {
 		
 		// Loop through list of words from back to front
