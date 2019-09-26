@@ -52,7 +52,7 @@ public class App {
 		}
 		
 		// Get the most used vowel
-		String vowel = vowelCount.keySet().toArray()[0].toString();
+		String vowel = passageAnalyzer.getMostUsedVowel();
 		
 		// Get the last word with the most used vowel
 		String lastWord = passageAnalyzer.getLastWordWithVowel(vowel);
