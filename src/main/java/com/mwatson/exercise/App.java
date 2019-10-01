@@ -20,8 +20,13 @@ public class App {
 	
     public static void main( String[] args ) {
     	
+    	System.out.print("Please enter the filepath of the passage: ");
+    	
+    	Scanner userInput = new Scanner(System.in);
+    	
+    	String fileName = userInput.nextLine();
+    	
     	// Create the file for passage
-    	String fileName = "passage.txt";
 		File searchFile = new File(fileName);
 		
 		String passage = "";

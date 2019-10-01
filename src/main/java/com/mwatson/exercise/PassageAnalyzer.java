@@ -14,7 +14,7 @@ public class PassageAnalyzer {
 	public PassageAnalyzer(String passage) {
 		
 		// Create the file input and build inventory
-    	this.text = passage;
+    	this.text = passage.toLowerCase();
 		this.words = this.text.split(" ");
 	}
 	
